@@ -59,7 +59,7 @@ internal static class Program
         new(26, "Szablony T4", T4TemplatesExample.Run)
     ];
 
-    private static void Main()
+    private static async Task Main()
     {
         while (true)
         {
