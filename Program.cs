@@ -12,14 +12,20 @@ using DotNet10ExamplesStarter.Examples.DistributedCommunication;
 using DotNet10ExamplesStarter.Examples.DynamicDlr;
 using DotNet10ExamplesStarter.Examples.EventBroker;
 using DotNet10ExamplesStarter.Examples.ExtensionMethods;
+using DotNet10ExamplesStarter.Examples.FieldKeyword;
 using DotNet10ExamplesStarter.Examples.FunctionalProgramming;
 using DotNet10ExamplesStarter.Examples.GenericTypes;
 using DotNet10ExamplesStarter.Examples.Iterators;
 using DotNet10ExamplesStarter.Examples.LambdaClosuresExpressionTrees;
+using DotNet10ExamplesStarter.Examples.AsyncStreams;
+using DotNet10ExamplesStarter.Examples.LazyEvaluationSequences;
 using DotNet10ExamplesStarter.Examples.LinqRelationalXml;
 using DotNet10ExamplesStarter.Examples.NamedOptionalArguments;
 using DotNet10ExamplesStarter.Examples.ObjectAndCollectionInitializers;
 using DotNet10ExamplesStarter.Examples.PartialClassesMethods;
+using DotNet10ExamplesStarter.Examples.PatternMatching;
+using DotNet10ExamplesStarter.Examples.PatternMatchingExtensions;
+using DotNet10ExamplesStarter.Examples.Ranges;
 using DotNet10ExamplesStarter.Examples.ReflectionAttributes;
 using DotNet10ExamplesStarter.Examples.ServiceLocator;
 using DotNet10ExamplesStarter.Examples.T4Templates;
@@ -49,7 +55,6 @@ internal static class Program
         new(16, "Refleksja i atrybuty", ReflectionAttributesExample.Run),
         new(17, "Komunikacja rozproszona: WCF i Web API", DistributedCommunicationExample.Run),
         new(18, "Programowanie współbieżne: ThreadPool, Task, TPL i PLINQ", ConcurrentProgrammingExample.Run),
-        new(27, "Programowanie współbieżne: Parallel Library", ConcurrentProgrammingExample2.Run),
         new(19, "Modele asynchroniczne APM, EAP i TAP", AsyncPatternsExample.Run),
         new(20, "Programowanie aspektowe AOP", AspectOrientedProgrammingExample.Run),
         new(21, "Programowanie funkcyjne", FunctionalProgrammingExample.Run),
@@ -57,10 +62,16 @@ internal static class Program
         new(23, "Dependency Injection", DependencyInjectionExample.Run),
         new(24, "Event Broker", EventBrokerExample.Run),
         new(25, "Testy jednostkowe i wzorzec AAA", UnitTestsAaaExample.Run),
-        new(26, "Szablony T4", T4TemplatesExample.Run)
+        new(26, "Szablony T4", T4TemplatesExample.Run),
+        new(27, "Dopasowanie do wzorca (pattern matching)", PatternMatchingExample.Run),
+        new(28, "Rozszerzenia dopasowania do wzorca", PatternMatchingExtensionsExample.Run),
+        new(29, "Asynchroniczne strumienie", AsyncStreamsExample.Run),
+        new(30, "Przedziały (operator ..)", RangesExample.Run),
+        new(31, "Leniwa ewaluacja i sekwencje", LazyEvaluationSequencesExample.Run),
+        new(32, "Słowo kluczowe field (C# 14)", FieldKeywordExample.Run)
     ];
 
-    private static async Task Main()
+    private static void Main()
     {
         while (true)
         {
