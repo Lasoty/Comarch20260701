@@ -1,3 +1,6 @@
 <Solution>
+  <Folder Name="/Tests/">
+    <Project Path="../Tests/DotNet10ExampleStarte.Unit.Tests/DotNet10ExampleStarte.Unit.Tests.csproj" Id="f0b721e0-f28a-48d8-af11-f13f77da279e" />
+  </Folder>
   <Project Path="DotNet10ExamplesStarter.csproj" />
 </Solution>
